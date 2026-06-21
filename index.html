@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered eSports Branding Generator</title>
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-grid"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <div class="container">
+        <header>
+            <h1 class="glitch-text" data-text="eSports Branding Generator">eSports Branding Generator</h1>
+            <p class="subtitle">Powered by IBM Granite AI</p>
+        </header>
+
+        <main>
+            <!-- INPUT SECTION -->
+            <section id="input-section" class="glass-panel">
+                <div class="form-group">
+                    <label for="vibe-input">Creative Direction / Vibe</label>
+                    <textarea id="vibe-input" rows="3" placeholder="e.g., Futuristic cyberpunk with neon accents..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="game-context">Game Context</label>
+                    <input type="text" id="game-context" placeholder="e.g., Valorant, osu!mania, Honor of Kings">
+                </div>
+                <button id="generate-btn" class="neon-btn">
+                    <span>INITIALIZE AI GENERATION</span>
+                </button>
+            </section>
+
+            <!-- LOADING STATE (Hidden by default) -->
+            <section id="loading-section" class="hidden">
+                <div class="loader-container">
+                    <div class="neon-spinner"></div>
+                    <div class="loading-texts">
+                        <p id="loading-text-1" class="active">Connecting to IBM Granite AI...</p>
+                        <p id="loading-text-2">Analyzing competitive landscape...</p>
+                        <p id="loading-text-3">Synthesizing visual identity...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RESULTS SECTION (Hidden by default) -->
+            <section id="results-section" class="glass-panel hidden">
+                <div class="result-header">
+                    <h2><span class="label">THEME IDENTIFIED:</span> CYBER SAMURAI</h2>
+                </div>
+
+                <div class="result-grid">
+                    <!-- Color Palette -->
+                    <div class="result-card">
+                        <h3>Color Palette</h3>
+                        <div class="palette-container">
+                            <div class="swatch-wrap"><div class="swatch" style="background: #FF0080;"></div><span>#FF0080</span></div>
+                            <div class="swatch-wrap"><div class="swatch" style="background: #00D9FF;"></div><span>#00D9FF</span></div>
+                            <div class="swatch-wrap"><div class="swatch" style="background: #9D00FF;"></div><span>#9D00FF</span></div>
+                            <div class="swatch-wrap"><div class="swatch" style="background: #FFD700;"></div><span>#FFD700</span></div>
+                            <div class="swatch-wrap"><div class="swatch" style="background: #1A1A2E;"></div><span>#1A1A2E</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Typography -->
+                    <div class="result-card">
+                        <h3>Typography Recommendation</h3>
+                        <div class="typography-display">
+                            <div class="type-item primary-type">
+                                <h4>Primary: Rajdhani Bold</h4>
+                                <h1 style="font-family: 'Rajdhani', sans-serif;">VICTORY DEFEAT</h1>
+                            </div>
+                            <div class="type-item secondary-type">
+                                <h4>Secondary: Quicksand Regular</h4>
+                                <p style="font-family: 'Quicksand', sans-serif;">Smooth, modern, and highly readable for competitive integrity.</p>
+                            </div>
+                        </div>
+                        <p class="rationale"><strong>Rationale:</strong> Rajdhani's geometric precision evokes cyberpunk aesthetics and competitive gaming intensity, while Quicksand ensures all supporting text remains accessible and professional. The contrast creates dynamic visual hierarchy.</p>
+                    </div>
+
+                    <!-- Layout Guidelines -->
+                    <div class="result-card full-width">
+                        <h3>Layout Guidelines</h3>
+                        <ul class="guidelines-list">
+                            <li><strong>Streaming Overlay:</strong> Create a split-screen layout with the webcam positioned in the bottom-left corner within a hexagonal frame featuring the primary gradient (#FF0080 to #00D9FF). Position alerts in the top-right with animated neon glow effects.</li>
+                            <li><strong>Social Media Banner:</strong> Design a diagonal composition splitting the banner. Place the team logo in the left third with a glowing outline effect. Add subtle particle effects and a faint grid pattern in the background.</li>
+                            <li><strong>Text Masking Concepts:</strong> Implement gradient-filled text with knockout effects over gameplay footage. Apply chromatic aberration to main headers for a glitch aesthetic.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <button id="reset-btn" class="neon-btn secondary">START NEW CONCEPT</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
